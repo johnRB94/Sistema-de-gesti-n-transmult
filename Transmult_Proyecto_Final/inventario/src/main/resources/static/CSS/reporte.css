@@ -1,0 +1,384 @@
+/* reporte.css === Estilos base === */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #f0f0f0, #dceeff);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* === Header === */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: slideDown 1s ease;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* === Navegación === */
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #00bfa6;
+    transform: translateY(-2px);
+    text-decoration: underline;
+}
+
+/* === Main === */
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+/* === Carátula === */
+.caratula {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.caratula h1 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.caratula p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 0;
+}
+
+/* === Footer === */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === Títulos === */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    color: #003366;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+    color: #003366;
+    padding-left: 1.2rem;
+    font-weight: 700;
+    animation: fadeIn 0.9s ease-in-out;
+}
+
+/* === Listas === */
+ul {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    color: #28a745;
+    font-size: 1rem;
+}
+
+ul li:hover {
+    color: #0040ff;
+}
+
+/* === Botón regresar === */
+.btn-producto {
+    display: inline-block;
+    background-color: #4dacff;
+    color: black;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    margin: 4px;
+}
+
+.btn-producto:hover {
+    background-color: #1499ff;
+}
+
+.btn-movimiento {
+    display: inline-block;
+    background-color: #4dacff;
+    color: black;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    margin: 4px;
+}
+
+.btn-movimiento:hover {
+    background-color: #1499ff;
+}
+
+/* === Botón general estilo personalizado === */
+.btn-producto,
+.btn-movimiento {
+    display: inline-block;
+    background-color: #4dacff;
+    color: black;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #013b68;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    margin: 4px;
+    text-decoration: none;
+    /* Elimina el subrayado */
+    /* Elimina bordes nativos */
+    font-family: inherit;
+    /* Mantiene la fuente */
+    cursor: pointer;
+    /* Puntero de mano */
+}
+
+/* Hover diferente para cada uno */
+.btn-producto:hover {
+    background-color: #1499ff;
+}
+
+.btn-movimiento:hover {
+    background-color: #1499ff;
+}
+
+/* === Reportes === */
+.reportes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.reporte-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    max-width: 320px;
+    flex: 1 1 300px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.reporte-card:hover {
+    transform: translateY(-5px);
+}
+
+.reporte-card h2 {
+    color: #0040ff;
+    margin-bottom: 1rem;
+}
+
+.reporte-card p {
+    margin-bottom: 1.2rem;
+}
+
+.reporte-card button {
+    background-color: #0040ff;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.reporte-card button:hover {
+    background-color: #0033cc;
+}
+
+/* === Imagen bienvenida === */
+.bienvenida img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeZoom 1.2s ease-out;
+    transition: transform 0.4s ease;
+}
+
+.bienvenida img:hover {
+    transform: scale(1.03);
+}
+
+/* === Tablas === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table-responsive {
+    margin: 10px;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+th,
+td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td[contenteditable="true"] {
+    background-color: #ccffcc;
+}
+
+/* === Animaciones === */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    .reportes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reporte-card {
+        width: 90%;
+    }
+
+    .bienvenida img {
+        width: 100%;
+        height: auto;
+    }
+}

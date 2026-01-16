@@ -1,0 +1,487 @@
+/* === Reset básico === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #f0f0f0, #dceeff);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+input.mayusculas {
+  text-transform: uppercase;
+}
+
+
+
+
+
+/* === Header === */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: slideDown 1s ease;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* === Navegación === */
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #00bfa6;
+    transform: translateY(-2px);
+    text-decoration: underline;
+}
+
+/* === Main === */
+main {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* === Carátula === */
+.caratula {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.caratula h1 {
+    color: #003366;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+    text-align: center;
+}
+
+.caratula p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 0;
+}
+
+/* === Títulos === */
+h2 {
+    font-size: 2.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+    color: #003366;
+    position: relative;
+    font-weight: 700;
+    animation: fadeIn 0.9s ease-in-out;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    left: 0;
+    top: 0;
+    border-radius: 3px;
+}
+
+/* === Listas === */
+ul {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    color: #28a745;
+    font-size: 1rem;
+}
+
+ul li:hover {
+    color: #0040ff;
+}
+
+/* === Tablas === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+th,
+td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td[contenteditable="true"] {
+    background-color: #ccffcc;
+}
+
+/* === Responsive tabla === */
+@media (max-width: 768px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 1rem;
+        background: white;
+    }
+
+    td {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+        border: none;
+    }
+
+    td::before {
+        position: absolute;
+        left: 1rem;
+        top: 0.8rem;
+        font-weight: bold;
+        white-space: nowrap;
+        content: attr(data-label);
+        color: #555;
+    }
+}
+
+/* === Formularios === */
+form {
+    background: white;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+form input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form label.form-label {
+  text-align: left;
+  display: block;
+}
+
+/* === Botones === */
+button,
+.btn-agregar,
+.btn-regresar {
+    margin: 10px;
+    background-color: #6c757d;
+    padding: 0.4rem 2rem;
+    border: #000000 1px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+.btn-agregar {
+    background-color: #28a745;
+    color: white;
+    border: #000000 1px;
+}
+
+.btn-agregar:hover {
+    background-color: #218838;
+    border: #000000 1px;
+}
+
+.btn-regresar {
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border: #000000 1px;
+}
+
+.btn-regresar:hover {
+    background-color: #5a6268;
+    border: #000000 1px;
+}
+
+/* === Imagen de bienvenida === */
+.bienvenida img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeZoom 1.2s ease-out;
+    transition: transform 0.4s ease;
+}
+
+.bienvenida img:hover {
+    transform: scale(1.03);
+}
+
+/* === Footer === */
+footer {
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    background-color: #003366;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === Animaciones === */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === Responsive general === */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .bienvenida img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+}
+
+#tablaProductos {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+
+#tablaRegistro {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+
+
+@media (max-width: 768px) {
+
+    h1,
+    h2 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .lead,
+    p,
+    li {
+        font-size: 1rem;
+    }
+
+    section {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Evita que algún estilo externo aplique display:flex o float */
+#contenido-principal {
+    display: block !important;
+}
+
+.seccion-bloque {
+    width: 100% !important;
+    display: block !important;
+    float: none !important;
+    clear: both !important;
+}
+
+@media (max-width: 1000px) {
+    .seccion-bloque {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    p,
+    li {
+        font-size: 1rem;
+    }
+
+    img {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Centrado de contenido dentro de cada sección */
+  .seccion-bloque {
+    text-align: center;
+  }
+
+  .seccion-bloque ul,
+  .seccion-bloque p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .seccion-bloque ul {
+    display: inline-block;
+    text-align: left; /* para que los ítems se alineen a la izquierda */
+  }
+
+  /* Ajuste en imágenes */
+  .seccion-bloque img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
