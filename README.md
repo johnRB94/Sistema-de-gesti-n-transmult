@@ -43,3 +43,23 @@ El sistema está orientado a los siguientes usuarios finales:
 - JavaScript
 - Bootstrap
 - Git y GitHub
+
+**Estructura del Repositorio**
+
+
+**Metodología de Trabajo**
+
+El desarrollo del proyecto se realiza utilizando una metodología ágil basada en sprints.
+Cada sprint incluye historias de usuario y tareas técnicas, las cuales se gestionan y evidencian mediante GitHub (commits, branches, issues y pull requests).
+
+**Estado del Proyecto**
+
+Sprint 1: En desarrollo
+El proyecto se encuentra en fase inicial, con la configuración del repositorio y definición de las primeras historias de usuario.
+
+**Autor(es)**
+- Del Castillo Hoyos, Fabricio Sebastian
+-
+-
+-
+-
