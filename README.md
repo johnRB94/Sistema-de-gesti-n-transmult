@@ -8,10 +8,10 @@ El sistema permite controlar productos, registrar entradas y salidas, y gestiona
 
 **Contexto Académico**
 
-Curso: Herramientas de Desarrollo
-Universidad: Universidad Tecnológica del Perú (UTP)
-Ciclo: Verano 2026
-Caso de negocio: Sistema Innovador de Soporte Operacional
+- Curso: Herramientas de Desarrollo
+- Universidad: Universidad Tecnológica del Perú (UTP)
+- Ciclo: Verano 2026
+- Caso de negocio: Sistema Innovador de Soporte Operacional
 
 Este proyecto se desarrolla bajo un enfoque ágil, organizado en cuatro sprints, utilizando control de versiones y colaboración mediante GitHub.
 
@@ -28,3 +28,18 @@ El sistema contempla las siguientes funcionalidades:
 - Visualización de stock y movimientos
 - Control de acceso según roles
 - Persistencia de datos mediante almacenamiento local
+
+**Roles de Usuario**
+
+El sistema está orientado a los siguientes usuarios finales:
+- Administrador: Gestión total del sistema y control de usuarios
+- Almacenero: Registro de productos y movimientos de inventario
+- Supervisor: Visualización y supervisión del inventario y reportes
+
+**Tecnologías Utilizadas**
+
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
+- Git y GitHub
