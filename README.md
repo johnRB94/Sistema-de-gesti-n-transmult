@@ -60,6 +60,6 @@ El proyecto se encuentra en fase inicial, con la configuración del repositorio 
 **Autor(es)**
 - Del Castillo Hoyos, Fabricio Sebastian
 - Moron Tejeda, Diego Sebastian
--
+- Sencio De La Cruz, Franco David
 -
 -
