@@ -14,3 +14,17 @@ Ciclo: Verano 2026
 Caso de negocio: Sistema Innovador de Soporte Operacional
 
 Este proyecto se desarrolla bajo un enfoque ágil, organizado en cuatro sprints, utilizando control de versiones y colaboración mediante GitHub.
+
+**Objetivo del Proyecto**
+
+Diseñar e implementar un sistema web que permita la gestión eficiente del inventario de la empresa TRASMULT, facilitando el control de productos, la supervisión de stock y el registro de movimientos, aplicando buenas prácticas de desarrollo y herramientas modernas.
+
+**Alcance**
+
+El sistema contempla las siguientes funcionalidades:
+- Inicio y cierre de sesión de usuarios
+- Gestión de productos (registro, edición, eliminación)
+- Registro de entradas y salidas de inventario
+- Visualización de stock y movimientos
+- Control de acceso según roles
+- Persistencia de datos mediante almacenamiento local
