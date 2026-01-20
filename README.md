@@ -80,13 +80,65 @@ El sistema está orientado a los siguientes usuarios finales:
 Sistema-de-gestion-transmult/
 │
 ├── Transmult_Proyecto_Final/
-│   └── inventario/
-│       ├── index.html
-│       ├── css/
-│       ├── js/
-│       └── assets/
+│ └── inventario/
+│ ├── src/
+│ │ ├── main/
+│ │ │ ├── java/com/transmult/inventario/
+│ │ │ │ ├── Config/
+│ │ │ │ │ ├── DataLoader.java
+│ │ │ │ │ ├── SecurityConfig.java
+│ │ │ │ │ └── UsuarioDetailsService.java
+│ │ │ │ ├── Controller/
+│ │ │ │ │ ├── InicioController.java
+│ │ │ │ │ ├── LoginController.java
+│ │ │ │ │ ├── MovimientoController.java
+│ │ │ │ │ ├── ProductoController.java
+│ │ │ │ │ └── ReporteController.java
+│ │ │ │ ├── Model/
+│ │ │ │ │ ├── Movimiento.java
+│ │ │ │ │ ├── Producto.java
+│ │ │ │ │ └── Usuario.java
+│ │ │ │ ├── Repository/
+│ │ │ │ │ ├── MovimientoRepository.java
+│ │ │ │ │ ├── ProductoRepository.java
+│ │ │ │ │ └── UsuarioRepository.java
+│ │ │ │ ├── Service/
+│ │ │ │ │ ├── MovimientoService.java
+│ │ │ │ │ ├── ProductoService.java
+│ │ │ │ │ └── UsuarioService.java
+│ │ │ │ └── InventarioApplication.java
+│ │ │ └── resources/
+│ │ │ ├── static/
+│ │ │ │ ├── CSS/
+│ │ │ │ │ ├── inicio.css
+│ │ │ │ │ ├── login.css
+│ │ │ │ │ ├── movimiento.css
+│ │ │ │ │ ├── producto.css
+│ │ │ │ │ ├── reporte.css
+│ │ │ │ │ └── style.css
+│ │ │ │ ├── JS/
+│ │ │ │ │ ├── producto.js
+│ │ │ │ │ ├── registroSalidaEntrada.js
+│ │ │ │ │ └── reporte.js
+│ │ │ │ └── img/
+│ │ │ │ ├── PRODUCTO.png
+│ │ │ │ └── trasmult.png
+│ │ │ ├── templates/
+│ │ │ │ ├── inicio.html
+│ │ │ │ ├── login.html
+│ │ │ │ ├── movimientos.html
+│ │ │ │ ├── productos.html
+│ │ │ │ └── reportes.html
+│ │ │ └── application.properties
+│ │ └── test/
+│ │ └── java/com/transmult/inventario/
+│ │ └── InventarioApplicationTests.java
+│ ├── pom.xml
+│ ├── mvnw
+│ ├── mvnw.cmd
+│ └── HELP.md
 │
-└── README.md
+├── README.md
 ```
 
 ---
