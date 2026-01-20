@@ -163,6 +163,8 @@ El proyecto se encuentra en fase inicial, con la configuración del repositorio 
 * **Del Castillo Hoyos, Fabricio Sebastian**
 * **Moron Tejeda, Diego Sebastian**
 * **Sencio De La Cruz, Franco David**
+* **Dick Daniel´s Miranda Silva**
+* **John Luis Ramos Bautista**
 
 ---
 
