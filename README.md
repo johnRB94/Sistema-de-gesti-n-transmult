@@ -284,9 +284,7 @@ Ambos archivos son claramente la misma captura de pantalla o vista de tablero, p
 - Gestionar incidencias:
 
   
-- Priorizar historias de usuario:
-
-### Priorización de Historias de Usuario
+- ### Priorización de Historias de Usuario:
 
 | ID | Historia de Usuario | Rol | Prioridad | Justificación |
 |----|--------------------|-----|-----------|---------------|
@@ -311,7 +309,7 @@ Ambos archivos son claramente la misma captura de pantalla o vista de tablero, p
 | HU-16 | Ordenar productos por código | Usuario autenticado | Baja | Facilita la revisión visual del inventario |
 | HU-20 | Diseño adaptable a distintos dispositivos | Usuario autenticado | Baja | Mejora la usabilidad, pero no afecta la lógica principal |
  
-- Registrar métricas del proyecto:
+- ### Registrar métricas del proyecto:
 
 ### Métricas del Proyecto – Sprint 1
 
