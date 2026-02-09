@@ -256,13 +256,13 @@ Milestone,Fecha de Entrega,Estado,Descripción
 
 El desarrollo se ha estructurado en unidades de tiempo orientadas a entregables incrementales, asegurando la calidad en cada fase:
 
-* **🚀 Sprint 1: Control de Versiones  (closed)**
+* **📋 Sprint 1: Control de Versiones  (closed)**
     * *Infraestructura de colaboración, estrategia de ramas y base del repositorio.*
 * **📋 Sprint 2: Gestión Ágil  (closed)**
     * *Documentación de Historias de Usuario (HU), Backlog y tablero Kanban.*
-* **🛠️ Sprint 3: Integración Continua (open)**
+* **📋 Sprint 3: Integración Continua (open)**
     * *Configuración de Pipeline CI/CD y automatización de pruebas unitarias.*
-* **🐳 Sprint 4: Despliegue y Entrega (open)**
+* **📋 Sprint 4: Despliegue y Entrega (open)**
     * *Contenedorización con Docker y validación final en entorno de producción.*
   
 - ### Configurar tablero Kanban o Scrum:
@@ -346,7 +346,20 @@ Esta documentación permitió establecer acciones concretas para optimizar los p
 
   
 - ### Mantener trazabilidad historias–tareas:
+  
+🔗Para garantizar que cada desarrollo técnico responda a una necesidad del negocio, implementamos un modelo de trazabilidad total utilizando las herramientas de gestión de GitHub Projects e Issues. Cada tarea técnica se vincula directamente a una Historia de Usuario (HU), permitiendo un seguimiento en tiempo real del progreso.
 
+
+
+🛠️ Implementación de la Trazabilidad📋
+
+* GitHub Project Board: Utilizamos un tablero Kanban automatizado para visualizar el flujo de trabajo (Todo, In Progress, Done). Actualmente, el Sprint 1 y 2 cuenta con 30 historias de usuario completadas al 100%.✅
+  
+* Gestión de Issues: Cada requerimiento se documentó como un Issue con etiquetas personalizadas (Prox trabajo, Buen trabajo, documentación) para clasificar prioridades y tipos de tarea.✅
+
+* Control de Incidencias: Se implementó un registro de incidencias (bugs) vinculados a las tareas de validación, asegurando que cada error encontrado sea corregido antes del cierre del sprint.✅
+
+* Vinculación con Pull Requests: Cada actualización del código (Update README, Definir sprints, etc.) se realiza mediante Pull Requests aprobados que hacen referencia a los issues correspondientes.✅
 
 ---
 
