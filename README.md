@@ -282,7 +282,9 @@ Ambos archivos son claramente la misma captura de pantalla o vista de tablero, p
 
   
 - Gestionar incidencias:
-
+La gestión de incidencias del proyecto se llevó a cabo utilizando la funcionalidad **GitHub Issues** como herramienta central de control y seguimiento.  
+Las incidencias fueron registradas de manera estructurada, incluyendo descripción detallada del problema, pasos para su reproducción, resultado esperado, resultado actual, nivel de prioridad y sprint correspondiente.  
+Este enfoque permitió una trazabilidad clara de los errores detectados durante el desarrollo, así como una adecuada asignación de responsabilidades y control del estado de cada incidencia dentro del **Sprint 2 – Gestión Ágil y Seguimiento**.
   
 - ### Priorización de Historias de Usuario:
 
@@ -336,7 +338,9 @@ Ambos archivos son claramente la misma captura de pantalla o vista de tablero, p
 Las métricas evidencian un avance constante del proyecto, con la mayoría de historias principales completadas y una actividad continua en el repositorio mediante commits, issues y pull requests.
 
 - Documentar retrospectivas:
-
+Al cierre del **Sprint 2**, el equipo realizó una retrospectiva con el objetivo de evaluar el desempeño del sprint y la dinámica de trabajo colaborativo.  
+La retrospectiva fue documentada en el repositorio GitHub mediante un archivo en formato **Markdown**, donde se registraron los aspectos positivos del sprint, las dificultades encontradas durante el desarrollo y las oportunidades de mejora identificadas.  
+Esta documentación permitió establecer acciones concretas para optimizar los procesos de planificación, comunicación y ejecución en los sprints posteriores, promoviendo la mejora continua del proyecto.
   
 - Definir roles y responsabilidades:
 
