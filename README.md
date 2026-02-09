@@ -238,8 +238,9 @@ Los dos archivos parecen ser copias del mismo tablero, posiblemente enviadas en 
 
   
 - ### Crear backlog del producto:
+  Para el BackLog tenemos como principios establecidos los roles y habilidades que tiene cada miembro del equipo.
+  Entrada - Proceso - Salida - Mejoras Futuras
 
-  
 - ### Definir sprints y milestones:
 Se establecieron hitos temporales vinculados a los entregables del ciclo académico para asegurar el cumplimiento de los objetivos en las fechas previstas.
 Milestone,Fecha de Entrega,Estado,Descripción
@@ -344,6 +345,8 @@ Esta documentación permitió establecer acciones concretas para optimizar los p
   
 - ### Definir roles y responsabilidades:
 
+  Lo que viene hacer Los Roles y Responsabilidades del equipo nos planteamos bien como debemos de actuar y interactuar con el BackLog ya que gracias al organizador de Proyectos que tenemos podemos agruparnos y
+  asignarnos cada tarea y tacharlo como realizado.
   
 - ### Mantener trazabilidad historias–tareas:
   
