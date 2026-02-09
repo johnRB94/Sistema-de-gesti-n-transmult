@@ -227,6 +227,14 @@ En este sprint se trabajó en la organización y seguimiento del proyecto aplica
 
 **Actividades realizadas:**
 - Configurar herramienta de gestión de proyectos:
+Estos dos archivos son idénticos: ambos muestran un Tablero Kanban con cuatro columnas de estado (POR HACER, EN PROCESO, HECHO, APROBADO), utilizado para organizar tareas en un proyecto de desarrollo de software.
+La estructura es clara y refleja el flujo de trabajo típico en metodologías ágiles o de gestión visual:
+•	POR HACER: Incluye tareas pendientes como crear el repositorio Git, definir la estructura de ramas y configurar archivos base.
+•	EN PROCESO: Muestra tareas en ejecución, con porcentajes de progreso indicados (ej: 25% en estructura inicial del proyecto).
+•	HECHO: Tareas ya completadas, como la reunión inicial y la asignación de roles.
+•	APROBADO: Aún vacía, indicando que no hay entregables revisados y aceptados formalmente.
+Se nota que el equipo está en fase inicial del proyecto (configuración de repositorio, entorno y estructura), con responsabilidades asignadas claramente (Líder Técnico, DevOps, Product Owner, etc.).
+Los dos archivos parecen ser copias del mismo tablero, posiblemente enviadas en momentos distintos o como respaldo.
 
   
 - Crear backlog del producto:
@@ -258,6 +266,19 @@ El desarrollo se ha estructurado en unidades de tiempo orientadas a entregables 
     * *Contenedorización con Docker y validación final en entorno de producción.*
   
 - Configurar tablero Kanban o Scrum:
+Tablero de historias de usuario organizado en un entorno de gestión ágil (posiblemente Trello o Jira), clasificado por prioridad (Alta, Media, Baja) y con un enfoque en funcionalidades para un sistema de gestión de inventario, especialmente desde el rol de Administrador.
+Estructura principal:
+•	Columnas de flujo: Entrada → Proceso → Salida → Mejoras Futuras (metodología visual de proceso).
+•	Historias de usuario agrupadas por prioridad, con énfasis en:
+o	Alta: Validación de campos, exportación de reportes, historial de cambios, alertas de stock bajo.
+o	Media: Ordenamiento de productos, reporte de inventario general.
+o	Baja: Persistencia de datos, control de acceso por sesión.
+Observaciones:
+•	El sistema parece estar en fase de definición de requisitos.
+•	Hay claros indicios de duplicidad (ej: “Visualización del stock bajo” aparece en Alta y Media).
+•	Se menciona explícitamente Jira al final, lo que sugiere que este tablero podría ser una planificación previa a su implementación en dicha herramienta.
+•	Las “Mejoras Futuras” incluyen funcionalidades avanzadas como sistema multi-almacén.
+Ambos archivos son claramente la misma captura de pantalla o vista de tablero, posiblemente compartida en diferentes momentos o contextos.
 
   
 - Gestionar incidencias:
