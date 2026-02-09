@@ -147,27 +147,34 @@ ul li:hover {
     color: #0040ff;
 }
 
-/* === Tablas === */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 2rem;
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-}
+
 
 thead {
     background-color: #007BFF;
     color: white;
 }
 
-th,
-td {
-    padding: 0.8rem;
-    border-bottom: 1px solid #ddd;
-    text-align: left;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
 }
+
+/* encabezados */
+th {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
+    background-color: #cfe2ff;
+    white-space: nowrap;
+}
+
+/* celdas */
+td {
+    padding: 0.35rem 0.5rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
 
 tr:hover {
     background-color: #f1f1f1;
@@ -179,19 +186,15 @@ td[contenteditable="true"] {
 
 /* === Responsive tabla === */
 @media (max-width: 768px) {
+.table-responsive {
+    overflow-x: auto;
+}
 
-    table,
-    thead,
-    tbody,
-    th,
-    td,
-    tr {
-        display: block;
-    }
+table {
+    min-width: 900px; /* ajusta según columnas */
+}
 
-    thead {
-        display: none;
-    }
+
 
     tr {
         margin-bottom: 1rem;
@@ -208,15 +211,6 @@ td[contenteditable="true"] {
         border: none;
     }
 
-    td::before {
-        position: absolute;
-        left: 1rem;
-        top: 0.8rem;
-        font-weight: bold;
-        white-space: nowrap;
-        content: attr(data-label);
-        color: #555;
-    }
 }
 
 /* === Formularios === */
@@ -386,10 +380,6 @@ footer {
     }
 }
 
-#tablaProductos {
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
 
 
 #tablaRegistro {
@@ -485,3 +475,5 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+
+  
