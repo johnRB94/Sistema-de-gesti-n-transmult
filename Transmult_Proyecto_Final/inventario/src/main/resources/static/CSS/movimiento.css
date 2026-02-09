@@ -145,14 +145,25 @@ ul li:hover {
     color: #0040ff;
 }
 
-/* === Tablas === */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 2rem;
     background: white;
-    border-radius: 8px;
-    overflow: hidden;
+}
+
+/* encabezados */
+th {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
+    background-color: #cfe2ff;
+    white-space: nowrap;
+}
+
+/* celdas */
+td {
+    padding: 0.35rem 0.5rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
 }
 
 thead {
@@ -160,12 +171,6 @@ thead {
     color: white;
 }
 
-th,
-td {
-    padding: 0.8rem;
-    border-bottom: 1px solid #ddd;
-    text-align: left;
-}
 
 tr:hover {
     background-color: #f1f1f1;
@@ -178,18 +183,14 @@ td[contenteditable="true"] {
 /* === Responsive tabla === */
 @media (max-width: 768px) {
 
-    table,
-    thead,
-    tbody,
-    th,
-    td,
-    tr {
-        display: block;
-    }
+   .table-responsive {
+    overflow-x: auto;
+}
 
-    thead {
-        display: none;
-    }
+table {
+    min-width: 900px; /* ajusta según columnas */
+}
+
 
     tr {
         margin-bottom: 1rem;
@@ -206,15 +207,6 @@ td[contenteditable="true"] {
         border: none;
     }
 
-    td::before {
-        position: absolute;
-        left: 1rem;
-        top: 0.8rem;
-        font-weight: bold;
-        white-space: nowrap;
-        content: attr(data-label);
-        color: #555;
-    }
 }
 
 /* === Formularios === */
