@@ -33,10 +33,11 @@ public class ProductoController {
         return "redirect:/productos";
     }
 
-    @PostMapping("/eliminar/{id}")
-    public String eliminarProducto(@PathVariable Long id) {
+    @DeleteMapping("/eliminar/{id}")
+    @ResponseBody
+    public ResponseEntity<?> eliminarProducto(@PathVariable Long id) {
         productoService.eliminar(id);
-        return "redirect:/productos";
+        return ResponseEntity.ok().build();
     }
 
     @GetMapping("/buscar/{codigo}")
@@ -45,6 +46,16 @@ public class ProductoController {
         return productoService.obtenerPorCodigo(codigo)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @PutMapping("/editar/{id}")
+    @ResponseBody
+    public ResponseEntity<?> editarProducto(
+            @PathVariable Long id,
+            @RequestBody Producto producto) {
+
+        productoService.editarProducto(id, producto.getDescripcion(), producto.getInventario());
+        return ResponseEntity.ok().build();
     }
 
 }
