@@ -1,5 +1,4 @@
 package com.transmult.inventario.Controller;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -28,23 +27,18 @@ public class MovimientoController {
     }
 
     @PostMapping("/guardar")
-    public String guardarMovimiento(@ModelAttribute Movimiento movimiento) {
-        // Buscar el producto por código
-        productoService.obtenerPorCodigo(movimiento.getCodigo()).ifPresent(producto -> {
-            movimiento.setDescripcion(producto.getDescripcion());
-            movimiento.setMarca(producto.getMarca());
-            movimiento.setUnidad(producto.getUnidad());
-        });
+    public String guardarMovimiento(@ModelAttribute Movimiento movimiento, Model model) {
 
-        // Guardar el movimiento
-        movimientoService.guardar(movimiento);
+        try {
+            movimientoService.guardarConValidacion(movimiento);
+            return "redirect:/movimientos?exito";
 
-        // Actualizar inventario
-        productoService.actualizarInventario(
-                movimiento.getCodigo(),
-                movimiento.getEntrada(),
-                movimiento.getSalida());
-
-        return "redirect:/movimientos";
+        } catch (IllegalStateException e) {
+            model.addAttribute("error", e.getMessage());
+            model.addAttribute("movimientos", movimientoService.listarTodos());
+            model.addAttribute("productos", productoService.listarTodos());
+            return "movimientos";
+        }
     }
+
 }
