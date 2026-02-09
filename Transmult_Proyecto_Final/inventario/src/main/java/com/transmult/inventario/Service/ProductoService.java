@@ -46,4 +46,12 @@ public class ProductoService {
             productoRepository.save(producto);
         }
     }
+
+    public void editarProducto(Long id, String descripcion, int inventario) {
+        Producto producto = productoRepository.findById(id).orElseThrow();
+        producto.setDescripcion(descripcion);
+        producto.setInventario(inventario);
+        productoRepository.save(producto);
+    }
+
 }
