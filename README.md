@@ -233,7 +233,29 @@ En este sprint se trabajó en la organización y seguimiento del proyecto aplica
 
   
 - Definir sprints y milestones:
+Se establecieron hitos temporales vinculados a los entregables del ciclo académico para asegurar el cumplimiento de los objetivos en las fechas previstas.
+Milestone,Fecha de Entrega,Estado,Descripción
 
+### **Planificación de Sprints y Milestones**
+
+| Milestone | Fecha de Entrega | Estado | Descripción |
+| :--- | :--- | :--- | :--- |
+| **Gestionar versionado y releases** | 28 de enero, 2026 | ✅ Finalizado | Configuración de base, GitFlow y primera versión estable. |
+| **Definir sprints y milestones** | 05 de febrero, 2026 | ✅ Finalizado | Planificación ágil, creación de Issues y organización del Project Board. |
+| **Validar ejecución del sistema** | 06 de marzo, 2026 | 🔵 En curso | Pruebas finales, despliegue y cierre del proyecto. |
+
+## 🔄 Organización de Sprints
+
+El desarrollo se ha estructurado en unidades de tiempo orientadas a entregables incrementales, asegurando la calidad en cada fase:
+
+* **🚀 Sprint 1: Control de Versiones  (closed)**
+    * *Infraestructura de colaboración, estrategia de ramas y base del repositorio.*
+* **📋 Sprint 2: Gestión Ágil  (closed)**
+    * *Documentación de Historias de Usuario (HU), Backlog y tablero Kanban.*
+* **🛠️ Sprint 3: Integración Continua (open)**
+    * *Configuración de Pipeline CI/CD y automatización de pruebas unitarias.*
+* **🐳 Sprint 4: Despliegue y Entrega (open)**
+    * *Contenedorización con Docker y validación final en entorno de producción.*
   
 - Configurar tablero Kanban o Scrum:
 
