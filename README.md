@@ -187,19 +187,37 @@ En esta sección se documentan los avances, actividades realizadas y evidencias 
 
 Durante este sprint se establecieron las bases del trabajo colaborativo y el control de versiones del proyecto, permitiendo una correcta organización del código y la colaboración del equipo mediante GitHub.
 
-**Actividades realizadas:**
-- Configuración del repositorio Git con una estructura profesional.
-- Definición de la estrategia de ramas y convención de commits.
-- Configuración de protección de la rama principal.
-- Implementación del uso obligatorio de Pull Requests.
-- Gestión de conflictos de fusión durante el trabajo colaborativo.
-- Configuración de plantillas para Issues y Pull Requests.
-- Documentación del flujo de trabajo colaborativo.
-- Gestión de versionado del proyecto.
-- Configuración del repositorio remoto en la nube (GitHub).
-- Registro de evidencias de colaboración mediante commits y Pull Requests.
+#### ✅ Actividades realizadas
 
-**Estado:** 🟢 Completado
+- **Configuración del repositorio Git con una estructura profesional:**  
+  Se creó el repositorio del proyecto en GitHub, organizando los archivos y carpetas de forma clara y coherente, facilitando la comprensión del código y el mantenimiento del sistema.
+
+- **Definición de la estrategia de ramas y convención de commits:**  
+  Se estableció una estrategia de ramas que permitió separar el desarrollo de nuevas funcionalidades de la versión principal del proyecto. Asimismo, se definió una convención de commits clara y descriptiva para mantener un historial de cambios comprensible.
+
+- **Configurar protección de ramas principales:**  
+  Se configuró la protección de la rama principal para evitar cambios directos no controlados, asegurando que todas las modificaciones pasen por un proceso de revisión antes de integrarse al proyecto.
+
+- **Implementar Pull Requests obligatorios:**  
+  Se estableció el uso obligatorio de Pull Requests como mecanismo para integrar cambios, promoviendo la revisión del código y mejorando la calidad del desarrollo colaborativo.
+
+- **Gestionar conflictos de fusión:**  
+  Se identificaron y resolvieron conflictos de fusión derivados del trabajo simultáneo del equipo, aplicando buenas prácticas para mantener la integridad del código.
+
+- **Configurar plantillas de Issues y Pull Requests:**  
+  Se crearon plantillas para Issues y Pull Requests, estandarizando la forma de reportar incidencias y proponer cambios, lo que facilitó la comunicación y el seguimiento del trabajo.
+
+- **Documentar flujo de trabajo colaborativo:**  
+  Se documentó el flujo de trabajo del equipo, describiendo el proceso desde la creación de ramas hasta la aprobación e integración de cambios, asegurando que todos los integrantes sigan las mismas pautas.
+
+- **Gestionar versionado y releases:**  
+  Se aplicó un esquema de versionado para identificar los avances del proyecto, permitiendo un mejor control de las entregas y cambios realizados durante el desarrollo.
+
+- **Configurar repositorio remoto en la nube:**  
+  El proyecto fue centralizado en un repositorio remoto en GitHub, permitiendo el acceso compartido, la sincronización del código y el trabajo colaborativo en la nube.
+
+- **Documentar evidencias de colaboración:**  
+  Se generaron evidencias del trabajo colaborativo a través de commits, Pull Requests y registros de actividad en GitHub, demostrando la participación activa de los integrantes del equipo.
 
 ---
 
@@ -208,25 +226,89 @@ Durante este sprint se establecieron las bases del trabajo colaborativo y el con
 En este sprint se trabajó en la organización y seguimiento del proyecto aplicando prácticas ágiles, permitiendo una mejor planificación y control del desarrollo.
 
 **Actividades realizadas:**
-- Configuración de la herramienta de gestión del proyecto en GitHub.
-- Creación del backlog del producto basado en historias de usuario.
-- Definición de sprints y milestones del proyecto.
-- Configuración de un tablero Kanban para el seguimiento de tareas.
-- Gestión y seguimiento de incidencias mediante Issues.
-- Priorización de historias de usuario según valor, urgencia y complejidad.
-- Registro de métricas del proyecto (commits, issues, progreso por sprint).
-- Documentación de retrospectivas del sprint.
-- Definición de roles y responsabilidades del equipo.
-- Mantenimiento de la trazabilidad entre historias de usuario y tareas.
+- Configurar herramienta de gestión de proyectos:
 
-**Estado:** 🟡 En desarrollo
+  
+- Crear backlog del producto:
+
+  
+- Definir sprints y milestones:
+
+  
+- Configurar tablero Kanban o Scrum:
+
+  
+- Gestionar incidencias:
+
+  
+- Priorizar historias de usuario:
+
+### Priorización de Historias de Usuario
+
+| ID | Historia de Usuario | Rol | Prioridad | Justificación |
+|----|--------------------|-----|-----------|---------------|
+| HU-01 | Iniciar sesión con usuario y contraseña | Administrador | Alta | Es indispensable para acceder al sistema de forma segura |
+| HU-18 | Restringir acceso a páginas sin autenticación | Sistema | Alta | Garantiza la seguridad y evita accesos no autorizados |
+| HU-10 | Control de acceso según rol | Administrador | Alta | Define qué funcionalidades puede usar cada tipo de usuario |
+| HU-03 | Cerrar sesión | Usuario autenticado | Alta | Protege la información y el acceso al sistema |
+| HU-17 | Mantener datos al recargar la página | Administrador | Alta | Evita la pérdida de información registrada |
+| HU-04 | Registrar nuevos productos | Almacenero | Alta | Funcionalidad base para la gestión del inventario |
+| HU-07 | Registrar entradas de productos | Almacenero | Alta | Permite actualizar el stock cuando ingresa mercadería |
+| HU-08 | Registrar salidas de productos | Almacenero | Alta | Refleja correctamente las entregas y movimientos |
+| HU-05 | Visualizar lista de productos | Supervisor | Media | Permite supervisar el inventario disponible |
+| HU-09 | Visualizar historial de entradas y salidas | Supervisor | Media | Facilita el control y seguimiento de movimientos |
+| HU-11 | Editar datos de un producto | Almacenero | Media | Permite corregir errores en el inventario |
+| HU-12 | Eliminar productos | Administrador | Media | Ayuda a mantener el inventario ordenado |
+| HU-06 | Buscar productos por código | Usuario autenticado | Media | Mejora la rapidez de acceso a la información |
+| HU-15 | Identificar productos con stock bajo | Supervisor | Media | Apoya la toma de decisiones de reposición |
+| HU-19 | Visualizar reporte general del inventario | Supervisor | Media | Proporciona una visión global del stock |
+| HU-02 | Ver nombre del usuario en la página principal | Usuario autenticado | Baja | Funcionalidad informativa, no crítica |
+| HU-13 | Validar campos obligatorios | Usuario autenticado | Baja | Mejora la calidad de datos pero no es funcionalidad base |
+| HU-14 | Mostrar mensajes de confirmación | Usuario autenticado | Baja | Mejora la experiencia de usuario |
+| HU-16 | Ordenar productos por código | Usuario autenticado | Baja | Facilita la revisión visual del inventario |
+| HU-20 | Diseño adaptable a distintos dispositivos | Usuario autenticado | Baja | Mejora la usabilidad, pero no afecta la lógica principal |
+ 
+- Registrar métricas del proyecto:
+
+### Métricas del Proyecto – Sprint 1
+
+- Total de historias de usuario: 10
+- Historias completadas: 10
+- Historias en progreso: 0
+- Commits realizados: 19
+- Issues creados: 2
+- Issues cerrados: 2
+- Pull Requests realizados: 1
+
+### Métricas del Proyecto – Sprint 2
+
+- Total de historias de usuario: 10
+- Historias completadas: 10
+- Historias en progreso: 0
+- Commits realizados: 14
+- Issues creados: 41
+- Issues cerrados: 22
+- Pull Requests realizados: 15
+
+
+**Interpretación:**  
+Las métricas evidencian un avance constante del proyecto, con la mayoría de historias principales completadas y una actividad continua en el repositorio mediante commits, issues y pull requests.
+
+- Documentar retrospectivas:
+
+  
+- Definir roles y responsabilidades:
+
+  
+- Mantener trazabilidad historias–tareas:
+
 
 ---
 
 ### 🔜 Próximos Sprints
 
-- **Sprint 3:** Implementación y mejora de funcionalidades del sistema.
-- **Sprint 4:** Optimización, pruebas finales y documentación del proyecto.
+- **Sprint 3:**Integración y Entrega Continua.
+- **Sprint 4:** Contenedores y Despliegue.
 
 Estos sprints serán documentados progresivamente conforme avance el desarrollo del proyecto.
 
