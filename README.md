@@ -157,6 +157,43 @@ Cada sprint incluye **historias de usuario** y **tareas técnicas**, las cuales 
 El proyecto se encuentra en fase inicial, con la configuración del repositorio y la definición de las primeras historias de usuario.
 
 ---
+🟢 **Sprint 2:** Gestión Ágil y Seguimiento
+- Configurar herramienta de gestión de proyectos.
+
+- Crear backlog del producto.
+
+- Definir sprints y milestones.
+📅Planificación y Control de Hitos (Milestones)
+En esta fase del proyecto, se ha establecido la estructura temporal y los puntos de control críticos para garantizar el éxito del sistema de gestión Transmult. La planificación se divide en ciclos de trabajo iterativos y metas estratégicas alcanzables.
+1. Definición de Sprints
+Se han configurado cuatro Sprints principales para organizar el desarrollo incremental del software:
+
+Sprint 1: Control de Versiones y Colaboración (Finalizado): Establecimiento del repositorio y flujo de trabajo inicial.
+
+Sprint 2: Gestión Ágil y Seguimiento (En progreso): Implementación del tablero Kanban y monitoreo de tareas activas.
+
+Sprint 3: Integración y Entrega Continua: Automatización de pruebas y despliegue.
+
+Sprint 4: Contenedores y Despliegue: Finalización del producto y puesta en producción mediante contenedores.
+2. Estado de los Milestones (Hitos)
+A la fecha, se ha logrado el cumplimiento total de los siguientes hitos de planificación:
+Hito,Estado,Progreso,Fecha Límite
+Definir sprints y milestones,    ✅ Completado,100%, "5 de febrero, 2026"
+Gestionar versionado y releases, ✅ Completado,100%, "28 de enero, 2026"
+
+- Configurar tablero Kanban o Scrum.
+
+- Gestionar incidencias.
+
+- Priorizar historias de usuario.
+
+- Registrar métricas del proyecto.
+
+- Documentar retrospectivas.
+
+- Definir roles y responsabilidades.
+
+- Mantener trazabilidad historias–tareas.
 
 ## 👨‍💻 Autores
 
