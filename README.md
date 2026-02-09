@@ -226,7 +226,7 @@ Durante este sprint se establecieron las bases del trabajo colaborativo y el con
 En este sprint se trabajó en la organización y seguimiento del proyecto aplicando prácticas ágiles, permitiendo una mejor planificación y control del desarrollo.
 
 **Actividades realizadas:**
-- Configurar herramienta de gestión de proyectos:
+- ### Configurar herramienta de gestión de proyectos:
 Estos dos archivos son idénticos: ambos muestran un Tablero Kanban con cuatro columnas de estado (POR HACER, EN PROCESO, HECHO, APROBADO), utilizado para organizar tareas en un proyecto de desarrollo de software.
 La estructura es clara y refleja el flujo de trabajo típico en metodologías ágiles o de gestión visual:
 •	POR HACER: Incluye tareas pendientes como crear el repositorio Git, definir la estructura de ramas y configurar archivos base.
@@ -237,10 +237,10 @@ Se nota que el equipo está en fase inicial del proyecto (configuración de repo
 Los dos archivos parecen ser copias del mismo tablero, posiblemente enviadas en momentos distintos o como respaldo.
 
   
-- Crear backlog del producto:
+- ### Crear backlog del producto:
 
   
-- Definir sprints y milestones:
+- ### Definir sprints y milestones:
 Se establecieron hitos temporales vinculados a los entregables del ciclo académico para asegurar el cumplimiento de los objetivos en las fechas previstas.
 Milestone,Fecha de Entrega,Estado,Descripción
 
@@ -265,7 +265,7 @@ El desarrollo se ha estructurado en unidades de tiempo orientadas a entregables 
 * **🐳 Sprint 4: Despliegue y Entrega (open)**
     * *Contenedorización con Docker y validación final en entorno de producción.*
   
-- Configurar tablero Kanban o Scrum:
+- ### Configurar tablero Kanban o Scrum:
 Tablero de historias de usuario organizado en un entorno de gestión ágil (posiblemente Trello o Jira), clasificado por prioridad (Alta, Media, Baja) y con un enfoque en funcionalidades para un sistema de gestión de inventario, especialmente desde el rol de Administrador.
 Estructura principal:
 •	Columnas de flujo: Entrada → Proceso → Salida → Mejoras Futuras (metodología visual de proceso).
@@ -281,7 +281,7 @@ Observaciones:
 Ambos archivos son claramente la misma captura de pantalla o vista de tablero, posiblemente compartida en diferentes momentos o contextos.
 
   
-- Gestionar incidencias:
+- ### Gestionar incidencias:
 La gestión de incidencias del proyecto se llevó a cabo utilizando la funcionalidad **GitHub Issues** como herramienta central de control y seguimiento.  
 Las incidencias fueron registradas de manera estructurada, incluyendo descripción detallada del problema, pasos para su reproducción, resultado esperado, resultado actual, nivel de prioridad y sprint correspondiente.  
 Este enfoque permitió una trazabilidad clara de los errores detectados durante el desarrollo, así como una adecuada asignación de responsabilidades y control del estado de cada incidencia dentro del **Sprint 2 – Gestión Ágil y Seguimiento**.
@@ -337,15 +337,15 @@ Este enfoque permitió una trazabilidad clara de los errores detectados durante 
 **Interpretación:**  
 Las métricas evidencian un avance constante del proyecto, con la mayoría de historias principales completadas y una actividad continua en el repositorio mediante commits, issues y pull requests.
 
-- Documentar retrospectivas:
+- ### Documentar retrospectivas:
 Al cierre del **Sprint 2**, el equipo realizó una retrospectiva con el objetivo de evaluar el desempeño del sprint y la dinámica de trabajo colaborativo.  
 La retrospectiva fue documentada en el repositorio GitHub mediante un archivo en formato **Markdown**, donde se registraron los aspectos positivos del sprint, las dificultades encontradas durante el desarrollo y las oportunidades de mejora identificadas.  
 Esta documentación permitió establecer acciones concretas para optimizar los procesos de planificación, comunicación y ejecución en los sprints posteriores, promoviendo la mejora continua del proyecto.
   
-- Definir roles y responsabilidades:
+- ### Definir roles y responsabilidades:
 
   
-- Mantener trazabilidad historias–tareas:
+- ### Mantener trazabilidad historias–tareas:
 
 
 ---
