@@ -10,6 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: Transmult_Proyecto_Final/inventario
+
     steps:
       - name: Clonar repositorio
         uses: actions/checkout@v4
@@ -19,12 +23,10 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-
-      - name: Dar permisos a mvnw
-        run: chmod +x Transmult_Proyecto_Final/inventario/mvnw
+          cache: maven
 
       - name: Compilar y ejecutar tests
-        run: Transmult_Proyecto_Final/inventario/mvnw clean verify
+        run: mvn clean verify
 
       - name: Publicar artefacto (.jar)
         uses: actions/upload-artifact@v4
