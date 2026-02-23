@@ -382,8 +382,23 @@ Se fortaleció la estructura técnica del proyecto mediante herramientas que per
 - **Automatizar compilación del proyecto:**
   
 - **Ejecutar pruebas automáticas:**
-  
+  Cuando ejecutes esta prueba, obtendrás una salida como esta en tu consola o en el reporte de CI/CD:
+  Iniciando sesión en Transmult...
+✅ Login exitoso
+Buscando viaje CL-001...
+✅ Viaje cargado correctamente
+Intentando asignar tráiler TRA-123 (capacidad 25,000 kg)...
+Guardando cambios en el viaje...
+✅ ¡PRUEBA EXITOSA! El sistema rechazó correctamente el tráiler por sobrepeso.
+   Mensaje mostrado: El tráiler TRA-123 excede su capacidad máxima (25,000 kg) para este viaje (30,000 kg).
+Cerrando navegador...
 - **Configurar análisis de calidad:**
+  El análisis de calidad debe ser automático y formar parte de tu pipeline de integración continua. El objetivo es que cada vez que un desarrollador haga un cambio, el código sea analizado y, si no cumple con los estándares, se bloquee la fusión (pull request) o el despliegue.
+  Cada Pull Request hacia la rama main ejecutará un análisis completo de SonarQube.
+
+Quality Gate: SonarQube tiene un "Quality Gate" o "Puerta de Calidad" . Si el nuevo código introduce vulnerabilidades, baja la cobertura de pruebas por debajo de un umbral (ej. 80%) o aumenta la deuda técnica, el análisis fallará.
+
+Bloqueo Automático: Si el análisis falla, GitHub puede (si lo configuras así) bloquear la fusión del Pull Request. Esto evita que código de baja calidad llegue a producción.
   
 - **Gestionar dependencias:**
 El proyecto utiliza **Apache Maven** como herramienta de gestión de dependencias.  
