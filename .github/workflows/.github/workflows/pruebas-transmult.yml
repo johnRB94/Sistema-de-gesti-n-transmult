@@ -1,0 +1,32 @@
+name: Pruebas Automáticas Transmult
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  pruebas-sobrepeso:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Obtener código del repositorio
+      uses: actions/checkout@v3
+    
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Instalar dependencias
+      run: |
+        pip install selenium
+        pip install webdriver-manager  # Para manejar el ChromeDriver automáticamente
+    
+    - name: Ejecutar prueba de sobrepeso
+      run: python pruebas/test_asignar_trailer_con_sobrepeso.py
+      env:
+        # Variables de entorno para no hardcodear credenciales
+        TRANSMULT_USER: ${{ secrets.TRANSMULT_TEST_USER }}
+        TRANSMULT_PASS: ${{ secrets.TRANSMULT_TEST_PASS }}
