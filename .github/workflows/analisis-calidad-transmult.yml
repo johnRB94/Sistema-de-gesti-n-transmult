@@ -1,0 +1,35 @@
+name: Análisis de Calidad Transmult
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+    types: [opened, synchronize, reopened]
+
+jobs:
+  sonarqube:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Desactiva el clonado superficial para un análisis completo
+
+    - name: Configurar JDK (necesario para SonarScanner)
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Análisis con SonarQube
+      uses: sonarsource/sonarqube-scan-action@master
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  # Token de autenticación (lo guardas en los secrets de GitHub)
+        SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }} # URL de tu servidor SonarQube (ej. http://sonarqube.empresa.com)
+      with:
+        args: >
+          -Dsonar.projectKey=Transmult
+          -Dsonar.projectName="Transmult - Sistema de Gestión de Trailers"
+          -Dsonar.coverage.exclusions=**/*test*  # Excluye los propios tests del análisis
+          -Dsonar.exclusions=**/build/**,**/dist/**  # Excluye carpetas de compilación
+          -Dsonar.qualitygate.wait=true  # Espera a que el análisis termine y verifica el Quality Gate
