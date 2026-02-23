@@ -428,6 +428,12 @@ Maven permite:
 - Integración con herramientas de Integración Continua (CI/CD).
 - Organización estructurada del ciclo de vida del proyecto.
 
+
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI-blue)
+![Maven](https://img.shields.io/badge/Maven-3.9.10-red)
+![Java](https://img.shields.io/badge/Java-21-blue)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.3-brightgreen)
+
 ### Tecnologías y dependencias principales
 
 El proyecto está construido con:
