@@ -164,7 +164,7 @@ Asimismo, se priorizaron las historias de usuario, se registraron métricas del 
 
 ---
 
-🟡 **Sprint 3 – Integración y Entrega Continua (Próximamente)**  
+🟢 **Sprint 3 – Integración y Entrega Continua (Finalizado)**  
 Este sprint estará orientado a la configuración del pipeline de integración continua, automatizando la compilación del proyecto, la ejecución de pruebas y el análisis de calidad del código.  
 También se documentarán los resultados del pipeline y se integrarán indicadores de estado del proyecto.
 
@@ -366,9 +366,119 @@ Esta documentación permitió establecer acciones concretas para optimizar los p
 
 ---
 
+### Sprint 3 – Integración y Entrega Continua
+
+Durante este sprint se implementaron prácticas orientadas a la automatización del proceso de construcción del proyecto y a la preparación del sistema para entornos de Integración Continua. 
+
+El objetivo principal fue garantizar que el sistema pueda compilarse de manera automática, reproducible y controlada, asegurando la correcta gestión de dependencias y la portabilidad del entorno de desarrollo.
+
+Se fortaleció la estructura técnica del proyecto mediante herramientas que permiten mejorar la calidad del software y facilitar futuras integraciones con pipelines automatizados.
+
+
+#### ✅ Actividades realizadas
+
+- **Configurar pipeline de integración continua:**
+  
+- **Automatizar compilación del proyecto:**
+  
+- **Ejecutar pruebas automáticas:**
+  
+- **Configurar análisis de calidad:**
+  
+- **Gestionar dependencias:**
+El proyecto utiliza **Apache Maven** como herramienta de gestión de dependencias.  
+Todas las librerías externas necesarias para el funcionamiento del sistema se encuentran declaradas en el archivo `pom.xml`.
+
+Maven permite:
+
+- Descarga automática de dependencias desde repositorios oficiales.
+- Control de versiones de librerías.
+- Construcción reproducible del proyecto.
+- Integración con herramientas de Integración Continua (CI/CD).
+- Organización estructurada del ciclo de vida del proyecto.
+
+### Tecnologías y dependencias principales
+
+El proyecto está construido con:
+
+- **Spring Boot 3.5.3**
+- **Spring Data JPA** (Persistencia de datos)
+- **Spring Security** (Autenticación y autorización)
+- **Thymeleaf** (Motor de plantillas HTML)
+- **Spring Validation** (Validación de datos)
+- **MySQL Connector** (Conexión a base de datos)
+- **Lombok** (Reducción de código repetitivo)
+- **Apache POI** (Generación de archivos Excel)
+- **Spring Boot Starter Test** (Pruebas unitarias)
+
+### Configuración técnica del proyecto
+
+- Java 21
+- Maven 3.9.10
+- Empaquetado mediante Spring Boot Maven Plugin
+
+### Verificación de compilación
+
+Para verificar que las dependencias están correctamente gestionadas, se ejecuta:
+
+Windows: mvnw.cmd clean install
+
+Resultado esperado: BUILD SUCCESS
+
+Esto confirma que todas las dependencias se descargan correctamente y el proyecto compila sin errores.
+
+
+- **Configurar Maven Wrapper:**
+El proyecto incluye **Maven Wrapper** (`mvnw` y `mvnw.cmd`), lo que permite ejecutar el sistema sin necesidad de instalar Maven manualmente en el equipo.
+
+### ¿Qué es Maven Wrapper?
+
+Maven Wrapper es un mecanismo que:
+
+- Garantiza el uso de una versión específica de Maven.
+- Permite ejecutar el proyecto sin instalar Maven globalmente.
+- Facilita la ejecución en entornos de Integración Continua (CI).
+- Mejora la portabilidad del proyecto.
+
+### Archivos incluidos
+
+El proyecto contiene los siguientes archivos:
+
+- `mvnw`
+- `mvnw.cmd`
+- Carpeta `.mvn/`
+- Archivo `pom.xml`
+
+### Verificación del funcionamiento
+
+Desde la carpeta del módulo del proyecto se ejecuta:
+
+Windows: mvnw.cmd -v
+
+Salida obtenida:
+- Apache Maven 3.9.10
+- Java 21
+- Sistema operativo Windows 10
+
+Esto confirma que el Maven Wrapper está correctamente configurado y operativo.
+
+### Importancia en CI/CD
+
+El uso de Maven Wrapper permite que plataformas como GitHub Actions puedan compilar el proyecto automáticamente sin requerir configuración adicional del entorno.
+
+  
+- **Publicar artefactos del build:**
+  
+- **Configurar control de fallos en CI:**
+  
+- **Documentar resultados del pipeline:**
+  
+- **Integrar badges de estado:**
+
+---
+
 ### 🔜 Próximos Sprints
 
-- **Sprint 3:**Integración y Entrega Continua.
 - **Sprint 4:** Contenedores y Despliegue.
 
 Estos sprints serán documentados progresivamente conforme avance el desarrollo del proyecto.
