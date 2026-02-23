@@ -58,6 +58,18 @@
     <main class="container-fluid py-4" style="max-width: 1600px">
       <h2 class="mb-4">Productos</h2>
 
+       <!-- 🔢 TOTAL DE PRODUCTOS -->
+      <div class="row mb-4 justify-content-center">
+        <div class="col-md-2 col-sm-4">
+          <div class="card bg-dark text-white shadow-sm border-0">
+            <div class="card-body text-center py-3">
+              <h6 class="mb-1 small text-uppercase">Total de Productos</h6>
+              <h4 class="fw-bold mb-0" th:text="${totalProductos}">0</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- 🔍 BUSCADOR POR CÓDIGO -->
       <div class="card p-3 mb-4 shadow-sm">
         <h5 class="mb-3">Buscar productos por código</h5>
@@ -335,5 +347,6 @@
     <script th:src="@{/JS/producto.js}"></script>
   </body>
 </html>
+
 
 
