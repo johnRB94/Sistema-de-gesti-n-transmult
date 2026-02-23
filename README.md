@@ -379,7 +379,23 @@ Se fortaleció la estructura técnica del proyecto mediante herramientas que per
 
 - **Configurar pipeline de integración continua:**
   
+## ⚙️ Integración y Despliegue Continuo (CI/CD) - TRANSMULT
+
+Para asegurar la estabilidad y calidad del **Sistema de Gestión de Inventarios de TRANSMULT**, el proyecto cuenta con un pipeline automatizado configurado mediante **GitHub Actions**. Este flujo de trabajo garantiza que cada nueva funcionalidad o corrección se valide antes de integrarse al entorno principal.
+
+**Arquitectura del Pipeline:**
+
+- **1. Integración Continua (CI):**
+  - **Activación (Trigger):** El pipeline se ejecuta automáticamente ante cada *Push* o *Pull Request* dirigido a la rama `main`.
+  - **Validación (Build):** Se levanta el entorno, se instalan las dependencias necesarias y se compila el código del proyecto.
+  - **Pruebas (Testing):** Se ejecutan validaciones para asegurar que los módulos críticos (como el registro de carga, actualización de inventarios y gestión operativa) sigan funcionando correctamente y no se introduzcan errores.
+
+- **2. Despliegue Continuo (CD):**
+  - Si el código supera con éxito la fase de construcción y pruebas, se generan los artefactos correspondientes.
+  - Posteriormente, los cambios se despliegan de forma automatizada en el servidor, permitiendo entregar mejoras de software a la empresa TRANSMULT de manera ágil y segura.
+  
 - **Automatizar compilación del proyecto:**
+Cada vez que se integran nuevos cambios al repositorio, el pipeline descarga las dependencias y compila el código fuente de forma automática. Esto garantiza que el sistema esté libre de errores de sintaxis o problemas de dependencias, asegurando que siempre se genere una versión funcional (build) lista para ser desplegada, eliminando el clásico problema de "en mi máquina sí funciona".
   
 - **Ejecutar pruebas automáticas:**
   Cuando ejecutes esta prueba, obtendrás una salida como esta en tu consola o en el reporte de CI/CD:
