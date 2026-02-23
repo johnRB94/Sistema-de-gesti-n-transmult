@@ -366,6 +366,12 @@ Esta documentación permitió establecer acciones concretas para optimizar los p
 
 ---
 
+![Java](https://img.shields.io/badge/Java-21-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.3-6DB33F?style=flat-square&logo=springboot)
+![Maven](https://img.shields.io/badge/Maven-3.9.10-C71A36?style=flat-square&logo=apachemaven)
+![CI](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?style=flat-square&logo=githubactions)
+
+
 ### Sprint 3 – Integración y Entrega Continua
 
 Durante este sprint se implementaron prácticas orientadas a la automatización del proceso de construcción del proyecto y a la preparación del sistema para entornos de Integración Continua. 
@@ -398,6 +404,11 @@ Maven permite:
 - Organización estructurada del ciclo de vida del proyecto.
 
 ### Tecnologías y dependencias principales
+
+![Spring Security](https://img.shields.io/badge/Spring%20Security-Enabled-6DB33F?style=flat-square)
+![Spring Data JPA](https://img.shields.io/badge/JPA-Hibernate-blue?style=flat-square)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=flat-square)
+--
 
 El proyecto está construido con:
 
