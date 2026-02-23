@@ -24,6 +24,7 @@ public class ProductoController {
     public String listarProductos(Model model) {
         List<Producto> productos = productoService.listarTodos();
         model.addAttribute("productos", productos);
+        model.addAttribute("totalProductos", productos.size());
         return "productos"; // Thymeleaf: productos.html
     }
 
@@ -59,3 +60,4 @@ public class ProductoController {
     }
 
 }
+
