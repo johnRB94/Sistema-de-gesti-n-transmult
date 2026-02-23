@@ -497,3 +497,6 @@ Estos sprints serán documentados progresivamente conforme avance el desarrollo 
 ---
 
 📌 *Este repositorio forma parte de un proyecto académico y tiene fines educativos.*
+
+
+Prueba CI
