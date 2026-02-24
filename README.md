@@ -430,6 +430,13 @@ Maven permite:
 
 ### Tecnologías y dependencias principales
 
+![Java](https://img.shields.io/badge/Java-21-blue)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.3-brightgreen)
+![Maven](https://img.shields.io/badge/Maven-3.9.10-red)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
+![Thymeleaf](https://img.shields.io/badge/Thymeleaf-Template%20Engine-green)
+![Spring Security](https://img.shields.io/badge/Spring%20Security-Authentication-success)
+
 El proyecto está construido con:
 
 - **Spring Boot 3.5.3**
@@ -493,7 +500,10 @@ Salida obtenida:
 
 Esto confirma que el Maven Wrapper está correctamente configurado y operativo.
 
+
 ### Importancia en CI/CD
+
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Active-blue)
 
 El uso de Maven Wrapper permite que plataformas como GitHub Actions puedan compilar el proyecto automáticamente sin requerir configuración adicional del entorno.
 
