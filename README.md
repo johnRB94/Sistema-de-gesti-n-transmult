@@ -499,8 +499,52 @@ El uso de Maven Wrapper permite que plataformas como GitHub Actions puedan compi
 
   
 - **Publicar artefactos del build:**
+Durante el Sprint 3 se configuró la publicación automática del artefacto generado en cada ejecución exitosa del pipeline de Integración Continua.
+
+El workflow ejecuta el comando mvn clean verify, el cual compila el proyecto, ejecuta las pruebas unitarias y genera el archivo ejecutable .jar dentro del directorio target/.
+
+Una vez completada la compilación sin errores, el archivo generado es almacenado como artefacto del workflow mediante la acción actions/upload-artifact. El artefacto queda disponible para su descarga desde la sección Actions del repositorio.
+
+Esta configuración permite:
+
+Garantizar que el build proviene de una ejecución validada.
+
+Asegurar la trazabilidad entre versión del código y archivo generado.
+
+Facilitar futuras etapas de despliegue automatizado.
+
+Evitar inconsistencias entre entornos de desarrollo.
+
+Con ello, cada ejecución exitosa del pipeline produce una versión reproducible y verificable del sistema TRASMULT.
+
   
 - **Configurar control de fallos en CI:**
+El pipeline fue configurado bajo el principio de detención automática ante errores (fail-fast), garantizando que cualquier fallo durante la compilación o ejecución de pruebas interrumpa el proceso de integración.
+
+El control de fallos se implementa mediante:
+
+Ejecución del comando mvn clean verify.
+
+Validación automática de pruebas unitarias.
+
+Dependencia secuencial entre los pasos del workflow.
+
+Ausencia de configuraciones que permitan continuar ante errores.
+
+Si ocurre un error de compilación o una prueba falla:
+
+El job cambia automáticamente a estado Failed.
+
+El pipeline se detiene.
+
+No se genera ni publica el artefacto.
+
+Se evita la integración de código defectuoso en la rama principal.
+
+Esta configuración fortalece la calidad del software y asegura que únicamente versiones estables sean integradas al proyecto.
+
+
+
   
 - **Documentar resultados del pipeline:**
   
