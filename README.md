@@ -557,8 +557,18 @@ Esta configuración fortalece la calidad del software y asegura que únicamente 
 
   
 - **Documentar resultados del pipeline:**
+
+  Tenemos 3 3n conjunto al pipeline que nosotros podemos ejecutar y interactuar dando asi variantes como activacion, validacion y pruebas. Podemos documentar estas pruebas
+  dentro de la ejecucion del Backend que es la base de nuestro proyecto.
+  
+  - Activacion
+  - Validacion
+  - Pruebas
   
 - **Integrar badges de estado:**
+
+  Los Badges de estado son asignaciones que nosotros le damos como badges de estado, asi mismo conectado con el pipeline tenemos una conexion en cuando se ejecute el
+  programa podemos ver como el badge tiene una animacion conjunta al pipeline que cuando el programa  se ejecute sin problemas este en Verde sino se pondria Rojo.
 
 ---
 
