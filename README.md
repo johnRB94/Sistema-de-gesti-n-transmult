@@ -572,13 +572,105 @@ Esta configuración fortalece la calidad del software y asegura que únicamente 
 
 ---
 
-### 🔜 Próximos Sprints
+## Sprint 4 – Contenedores y Despliegue
 
-- **Sprint 4:** Contenedores y Despliegue.
+- **Crear Dockerfile:**  
+En el Sprint 4 se implementó la contenerización de la aplicación mediante la creación de un archivo `Dockerfile` ubicado en la raíz del proyecto.
 
-Estos sprints serán documentados progresivamente conforme avance el desarrollo del proyecto.
+El objetivo del Dockerfile es construir una imagen Docker que incluya el entorno de ejecución Java 21 y el archivo JAR generado por Maven, permitiendo que la aplicación pueda ejecutarse en cualquier entorno que tenga Docker instalado.
+
+### 📄 Ubicación
+
+El archivo `Dockerfile` se encuentra en la raíz del proyecto, al mismo nivel que el `pom.xml`.
+
+### 📦 Contenido del Dockerfile
+
+dockerfile
+FROM eclipse-temurin:21-jdk
+
+WORKDIR /app
+
+COPY target/inventario-0.0.1-SNAPSHOT.jar app.jar
+
+EXPOSE 8080
+
+ENTRYPOINT ["java","-jar","app.jar"]
+
+
+- **Configurar docker-compose:**  
+markdown
+## 🔹 Configurar docker-compose
+
+Para orquestar la aplicación junto con la base de datos MySQL, se creó el archivo `docker-compose.yml` en la raíz del proyecto.
+
+Este archivo permite ejecutar ambos servicios (aplicación y base de datos) de manera conjunta, automatizando el despliegue y asegurando la correcta comunicación entre contenedores.
+
+### 📄 Ubicación
+
+El archivo `docker-compose.yml` se encuentra en la raíz del proyecto.
+
+### 📦 Contenido del docker-compose.yml
+
+yaml
+version: '3.8'
+
+services:
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_transmult
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Fabricio.2002
+      MYSQL_DATABASE: transmult_base
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  app:
+    build: .
+    container_name: app_transmult
+    restart: always
+    depends_on:
+      - mysql
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/transmult_base?useSSL=false&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: Fabricio.2002
+
+volumes:
+  mysql_data:
+
+
+
+- **Gestionar variables de entorno:**  
+
+
+- **Construir imágenes de la aplicación:**  
+
+
+- **Desplegar la aplicación:**  
+
+  
+- **Configurar puertos y servicios:**  
+ 
+
+- **Validar ejecución del sistema:**  
+
+
+- **Documentar despliegue:**  
+
+
+- **Preparar versión final:**  
+
+
+- **Cerrar incidencias y documentación:**  
 
 ---
+
 
 - Configurar puertos y servicios:
 🧪 Calidad y Pruebas Automáticas
