@@ -656,24 +656,7 @@ volumes:
 
   
 - **Configurar puertos y servicios:**  
- 
-
-- **Validar ejecución del sistema:**  
-
-
-- **Documentar despliegue:**  
-
-
-- **Preparar versión final:**  
-
-
-- **Cerrar incidencias y documentación:**  
-
----
-
-
-- Configurar puertos y servicios:
-🧪 Calidad y Pruebas Automáticas
+ 🧪 Calidad y Pruebas Automáticas
 Transmult cuenta con un sistema integral de calidad y pruebas automáticas para garantizar la confiabilidad del sistema de gestión de tráilers.
 
 🔍 Estrategia de Calidad
@@ -703,6 +686,20 @@ Deuda técnica: <5% del esfuerzo total
 Duplicación: <3% en código nuevo
 
 Vulnerabilidades: Cero con rating crítico/alto
+
+
+- **Validar ejecución del sistema:**  
+
+
+- **Documentar despliegue:**  
+
+
+- **Preparar versión final:**  
+
+
+- **Cerrar incidencias y documentación:**  
+
+---
 
 ## 👨‍💻 Autores
 
