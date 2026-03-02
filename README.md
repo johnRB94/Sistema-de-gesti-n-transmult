@@ -580,6 +580,37 @@ Estos sprints serán documentados progresivamente conforme avance el desarrollo 
 
 ---
 
+- Configurar puertos y servicios:
+🧪 Calidad y Pruebas Automáticas
+Transmult cuenta con un sistema integral de calidad y pruebas automáticas para garantizar la confiabilidad del sistema de gestión de tráilers.
+
+🔍 Estrategia de Calidad
+Componente	Propósito	Herramienta
+Pruebas Unitarias	Validar funciones individuales -	JUnit / PyTest
+Pruebas de Integración	Verificar comunicación entre módulos -	Selenium / Cypress
+Pruebas E2E	Validar flujos críticos de negocio	- Selenium WebDriver
+Análisis Estático	Medir calidad y seguridad del código	- SonarQube
+
+✅ Caso de Prueba Crítico
+Validación de sobrepeso en tráilers
+Escenario: Evitar que un tráiler con capacidad de 25,000 kg sea asignado a un viaje de 30,000 kg.
+Resultado esperado: El sistema rechaza la asignación y muestra mensaje de error.
+
+🔄 Integración Continua
+Cada Pull Request ejecuta automáticamente:
+
+Pruebas automáticas (sobrepeso, facturación, trazabilidad)
+
+Análisis de calidad con SonarQube (cobertura >80%, cero vulnerabilidades críticas)
+
+📈 Métricas de Calidad
+Cobertura de código: Mínimo 80% en código nuevo
+
+Deuda técnica: <5% del esfuerzo total
+
+Duplicación: <3% en código nuevo
+
+Vulnerabilidades: Cero con rating crítico/alto
 
 ## 👨‍💻 Autores
 
