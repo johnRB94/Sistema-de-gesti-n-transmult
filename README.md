@@ -673,7 +673,7 @@ Antes de iniciar el proceso de despliegue, el servidor o equipo local debe conta
 #### Fase A: Obtención del Código Fuente (Clonación)
 El primer paso consiste en descargar la última versión estable del código a la máquina local. A través de la terminal, clonamos el repositorio oficial y nos ubicamos en el directorio específico donde reside el módulo de inventario:
 
-```bash
+bash
 git clone [https://github.com/johnRB94/Sistema-de-gesti-n-transmult.git](https://github.com/johnRB94/Sistema-de-gesti-n-transmult.git)
 cd Sistema-de-gesti-n-transmult/Transmult_Proyecto_Final/inventario
   
@@ -711,6 +711,17 @@ Vulnerabilidades: Cero con rating crítico/alto
 
 
 - **Validar ejecución del sistema:**  
+Consiste en que se a verificado que el sistema funcione correctamente después de implementar docker, asegurando que:
+
+- La aplicación inicia sin errores.
+
+- Las pantallas cargan correctamente.
+
+- Las funcionalidades implementadas se ejecutan según lo esperado.
+
+- No se afectan procesos ya existentes.
+
+- Los criterios de aceptación de la historia de usuario se cumplen.
 
 
 - **Documentar despliegue:**  
@@ -732,7 +743,7 @@ Antes de iniciar el proceso de despliegue, el servidor o equipo local debe conta
 #### Fase A: Obtención del Código Fuente (Clonación)
 El primer paso consiste en descargar la última versión estable del código a la máquina local. A través de la terminal, clonamos el repositorio oficial y nos ubicamos en el directorio específico donde reside el módulo de inventario:
 
-```bash
+bash
 git clone [https://github.com/johnRB94/Sistema-de-gesti-n-transmult.git](https://github.com/johnRB94/Sistema-de-gesti-n-transmult.git)
 cd Sistema-de-gesti-n-transmult/Transmult_Proyecto_Final/inventario
 
