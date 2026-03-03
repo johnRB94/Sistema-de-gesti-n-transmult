@@ -1,4 +1,7 @@
 package com.transmult.inventario.Controller;
+
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -20,10 +23,22 @@ public class MovimientoController {
     }
 
     @GetMapping
-    public String listarMovimientos(Model model) {
+    public String listarMovimientos(
+            @RequestParam(required = false) String buscar,
+            @RequestParam(required = false) String nuevo,
+            Model model) {
+
+                List<Movimiento> movimientos;
+
+    if (buscar != null && !buscar.isEmpty()) {
+        movimientos = movimientoService.buscarPorDescripcion(buscar);
+    } else {
+        movimientos = movimientoService.listarTodos();
+    }
         model.addAttribute("movimientos", movimientoService.listarTodos());
         model.addAttribute("productos", productoService.listarTodos());
-        return "movimientos"; // Thymeleaf: movimientos.html
+        model.addAttribute("totalMovimientos", movimientoService.contarMovimientos());
+        return "movimientos";
     }
 
     @PostMapping("/guardar")
