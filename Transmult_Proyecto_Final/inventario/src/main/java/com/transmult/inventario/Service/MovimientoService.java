@@ -26,6 +26,14 @@ public class MovimientoService {
 
     public void guardarConValidacion(Movimiento movimiento) {
 
+        if (movimiento.getEntrada() < 0 || movimiento.getSalida() < 0) {
+            throw new IllegalStateException("No se permiten cantidades negativas.");
+        }
+
+        if (movimiento.getEntrada() == 0 && movimiento.getSalida() == 0) {
+            throw new IllegalStateException("Debe ingresar una cantidad en entrada o salida.");
+        }
+
         Producto producto = productoService
                 .obtenerPorCodigo(movimiento.getCodigo())
                 .orElseThrow(() -> new IllegalStateException("Producto no encontrado"));
@@ -53,4 +61,15 @@ public class MovimientoService {
                 movimiento.getEntrada(),
                 movimiento.getSalida());
     }
+
+    public long contarMovimientos() {
+        return movimientoRepository.count();
+
+    }
+
+    public List<Movimiento> buscarPorDescripcion(String descripcion) {
+        return movimientoRepository.findByDescripcionContainingIgnoreCase(descripcion);
+    }
+
 }
+
