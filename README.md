@@ -646,11 +646,13 @@ volumes:
 
 
 
-- **Gestionar variables de entorno:**  
+- **Gestionar variables de entorno:**
+  
+ Usar variables de entorno en Docker es la mejor manera de gestionar la configuración de aplicaciones en diversos entornos de forma segura. Esto garantiza que su aplicación se comporte como se espera, tanto en escenarios de desarrollo como de implementación, al seguir las mejores prácticas y con herramientas como Docker Compose. Con el ejemplo de Node.js proporcionado, ahora cuenta con una base sólida para empezar a integrar variables de entorno en sus propias aplicaciones Dockerizadas.
 
+- **Construir imágenes de la aplicación:**
 
-- **Construir imágenes de la aplicación:**  
-
+  Principalmente aqui se deriva muchas cosas para que el proyecto o sistema se desenvuelva correctamente en cualquiern entorno ya sea externo o interno, esto nos ayuda a que si a nosotros nos funciona el proyecto tambien a nuestros colaboradores les deberia funcionar el proyecto en si. Para esto construimos imagenes o sea es un proceso el cual lleva que se ejecute en cualquier entorno.
 
 - **Desplegar la aplicación:**  
 
