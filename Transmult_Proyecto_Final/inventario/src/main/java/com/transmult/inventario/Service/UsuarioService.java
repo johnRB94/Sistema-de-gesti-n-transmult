@@ -19,4 +19,11 @@ public class UsuarioService {
     public Optional<Usuario> validarCredenciales(String usuario, String contraseña) {
         return usuarioRepository.findByUsuarioAndContraseña(usuario, contraseña);
     }
+
+    public long contarUsuarios() {
+    return usuarioRepository.count();
+    }
+    public Usuario buscarPorUsuario(String username) {
+    return usuarioRepository.findByUsuario(username).orElse(null);
+}
 }
