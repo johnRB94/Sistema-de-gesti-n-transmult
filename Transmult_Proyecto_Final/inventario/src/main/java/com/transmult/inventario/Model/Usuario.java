@@ -3,6 +3,7 @@ package com.transmult.inventario.Model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -22,4 +23,8 @@ public class Usuario {
     private String contraseña;
     
     private String rol;
+
+    // 👇 NUEVO CAMPO
+    private LocalDateTime ultimoAcceso;
 }
+
