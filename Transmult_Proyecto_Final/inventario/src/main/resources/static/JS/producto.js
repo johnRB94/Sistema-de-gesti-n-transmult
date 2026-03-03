@@ -135,3 +135,26 @@ function eliminarProducto(btn) {
   })
   .catch(() => alert(" Error al eliminar el producto"));
 }
+
+// Cuando el producto se agrega correctamente
+sessionStorage.setItem("resaltarUltimoProducto", "true");
+
+document.addEventListener("DOMContentLoaded", function () {
+  const resaltar = sessionStorage.getItem("resaltarUltimoProducto");
+
+  if (resaltar) {
+    const tabla = document.getElementById("tablaProductos");
+    if (!tabla) return;
+
+    const filas = tabla.querySelectorAll("tbody tr");
+    if (filas.length === 0) return;
+
+    // ✅ ÚLTIMO PRODUCTO (el más reciente)
+    const ultimaFila = filas[filas.length - 1];
+    ultimaFila.classList.add("table-info"); // azul claro
+
+    // 🔥 para que desaparezca al refrescar
+    sessionStorage.removeItem("resaltarUltimoProducto");
+  }
+});
+
