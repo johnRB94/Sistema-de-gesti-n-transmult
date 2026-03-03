@@ -47,7 +47,7 @@
             <a th:href="@{/reportes}">REPORTES</a>
           </th:block>
 
-          <a class="nav-link text-white fw-bold px-3" th:href="@{/logout}"
+          <a class="nav-link text-white fw-bold px-3" th:href="@{/logout}" onclick="return confirmarLogout()"
             >SALIR</a
           >
         </nav>
@@ -153,5 +153,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+function confirmarLogout() {
+    return confirm("¿Está seguro que desea cerrar sesión?");
+}
+</script>
   </body>
 </html>
+
