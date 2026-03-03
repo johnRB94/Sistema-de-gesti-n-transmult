@@ -655,7 +655,27 @@ volumes:
   Principalmente aqui se deriva muchas cosas para que el proyecto o sistema se desenvuelva correctamente en cualquiern entorno ya sea externo o interno, esto nos ayuda a que si a nosotros nos funciona el proyecto tambien a nuestros colaboradores les deberia funcionar el proyecto en si. Para esto construimos imagenes o sea es un proceso el cual lleva que se ejecute en cualquier entorno.
 
 - **Desplegar la aplicación:**  
+## 🚀 Despliegue y Ejecución del Módulo de Inventario
 
+El siguiente documento detalla el proceso técnico para el despliegue del módulo backend de inventario, correspondiente al Sistema de Información Integral para la Gestión Operativa de la Empresa TRANSMULT-MALABRIGO E.I.R.L. 
+
+Hemos optado por una arquitectura basada en contenedores utilizando **Docker**. Esto nos permite aislar el entorno de desarrollo, estandarizar las dependencias y asegurar que la aplicación funcione de manera idéntica en cualquier máquina o servidor, eliminando los clásicos problemas de compatibilidad de versiones.
+
+### 📋 1. Requisitos Previos
+Antes de iniciar el proceso de despliegue, el servidor o equipo local debe contar con las siguientes herramientas instaladas y configuradas:
+* **Docker Desktop / Docker Engine:** Para la creación de las imágenes y la orquestación del contenedor.
+* **Git:** Para el control de versiones y la extracción del código fuente.
+
+---
+
+### 🛠️ 2. Fases del Despliegue
+
+#### Fase A: Obtención del Código Fuente (Clonación)
+El primer paso consiste en descargar la última versión estable del código a la máquina local. A través de la terminal, clonamos el repositorio oficial y nos ubicamos en el directorio específico donde reside el módulo de inventario:
+
+```bash
+git clone [https://github.com/johnRB94/Sistema-de-gesti-n-transmult.git](https://github.com/johnRB94/Sistema-de-gesti-n-transmult.git)
+cd Sistema-de-gesti-n-transmult/Transmult_Proyecto_Final/inventario
   
 - **Configurar puertos y servicios:**  
  🧪 Calidad y Pruebas Automáticas
