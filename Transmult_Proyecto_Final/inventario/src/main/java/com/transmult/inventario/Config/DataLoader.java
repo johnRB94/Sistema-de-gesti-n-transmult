@@ -18,9 +18,9 @@ public class DataLoader {
     @PostConstruct
     public void cargarUsuarios() {
         if (usuarioRepository.count() == 0) {
-            usuarioRepository.save(new Usuario(null, "admin", "admin123", "ADMIN"));
-            usuarioRepository.save(new Usuario(null, "supervisor", "super123", "SUPERVISOR"));
-            usuarioRepository.save(new Usuario(null, "almacenero", "almacen123", "ALMACENERO"));
+            usuarioRepository.save(new Usuario(null, "admin", "admin123", "ADMIN", null));
+            usuarioRepository.save(new Usuario(null, "supervisor", "super123", "SUPERVISOR", null));
+            usuarioRepository.save(new Usuario(null, "almacenero", "almacen123", "ALMACENERO",null));
 
         }
     }
