@@ -7,7 +7,7 @@
 >
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Registro de Entradas y Salidas</title>
     <link rel="stylesheet" th:href="@{/CSS/movimiento.css}" />
@@ -26,13 +26,15 @@
 
   <body>
     <header class="text-white py-3">
-      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-md-between text-center">
-       
+      <div
+        class="container d-flex flex-column flex-md-row align-items-center justify-content-md-between text-center"
+      >
         <div class="logo display-6 fw-bold">
           SISTEMA DE INVENTARIO - TRASMULT
         </div>
-      <nav class="nav flex-column flex-md-row text-center text-md-start align-items-center">
-
+        <nav
+          class="nav flex-column flex-md-row text-center text-md-start align-items-center"
+        >
           <a class="nav-link text-white fw-bold px-3" th:href="@{/inicio}"
             >INICIO</a
           >
@@ -48,7 +50,10 @@
             <a th:href="@{/reportes}">REPORTES</a>
           </th:block>
 
-          <a class="nav-link text-white fw-bold px-3" th:href="@{/logout}"
+          <a
+            class="nav-link text-white fw-bold px-3"
+            th:href="@{/logout}"
+            onclick="return confirmarLogout();"
             >SALIR</a
           >
         </nav>
@@ -58,6 +63,51 @@
     <main class="container-fluid py-4" style="max-width: 1600px">
       <h2 class="mb-4">Movimientos de Productos</h2>
 
+      <div class="row mb-4 justify-content-center">
+        <div class="col-md-2 col-sm-4">
+          <div class="card bg-dark text-white shadow-sm border-0">
+            <div class="card-body text-center py-3">
+              <h6 class="mb-1 small text-uppercase">Total de movimientos</h6>
+              <h4 class="fw-bold mb-0" th:text="${totalMovimientos}">0</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-secondary mb-3" onclick="location.reload()">
+        Actualizar
+      </button>
+
+      <!-- 🔍 BUSCADOR POR PRODUCTO -->
+      <div class="card p-3 mb-4 shadow-sm">
+        <h5 class="mb-3">Buscar movimientos por producto</h5>
+        <div class="row g-2 align-items-center">
+          <div class="col-md-5">
+            <input
+              type="text"
+              id="buscarProductoMov"
+              class="form-control"
+              placeholder="Nombre del producto"
+            />
+          </div>
+          <div class="col-md-3">
+            <button
+              class="btn btn-primary w-100"
+              onclick="filtrarMovimientosPorProducto()"
+            >
+              Buscar
+            </button>
+          </div>
+          <div class="col-md-4 text-end">
+            <button
+              class="btn btn-secondary w-100"
+              onclick="limpiarFiltroMovimientosProducto()"
+            >
+              Limpiar
+            </button>
+          </div>
+        </div>
+      </div>
       <!-- 🔍 BUSCADOR POR FECHA -->
       <div class="card p-3 mb-4 shadow-sm">
         <h5 class="mb-3">Buscar movimientos por fecha</h5>
@@ -105,7 +155,11 @@
               </thead>
 
               <tbody id="tablaMovimientos">
-                <tr th:each="movimiento : ${movimientos}">
+                <tr
+                  th:each="movimiento : ${movimientos}"
+                  th:classappend="${movimiento.entrada > 0} ? 'table-success' :
+                    (${movimiento.salida > 0} ? 'table-danger' : '')"
+                >
                   <td th:text="${movimiento.fecha}">FECHA</td>
                   <td th:text="${movimiento.codigo}">CODIGO</td>
                   <td th:text="${movimiento.descripcion}">DESCRIPCION</td>
@@ -159,17 +213,12 @@
                 value="0"
                 class="form-control"
                 name="entrada"
+                min="1"
               />
             </div>
             <div class="mb-3">
               <label for="salida" class="form-label">Salida:</label>
-              <input
-                type="number"
-                id="salida"
-                value="0"
-                class="form-control"
-                name="salida"
-              />
+              <input type="number" id="salida" value="0" name="salida" />
             </div>
             <div class="mb-3">
               <label for="responsable" class="form-label"
@@ -265,6 +314,28 @@
         toast.show();
       });
     </script>
+
+    <script>
+      function actualizarTabla() {
+        fetch("/movimientos")
+          .then((response) => response.text())
+          .then((html) => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, "text/html");
+            const nuevaTabla = doc.querySelector("#tablaMovimientos");
+            document.querySelector("#tablaMovimientos").innerHTML =
+              nuevaTabla.innerHTML;
+          });
+      }
+    </script>
+
+    <script>
+      function confirmarLogout() {
+        return confirm("¿Está seguro que desea cerrar sesión?");
+      }
+    </script>
   </body>
 </html>
+
+
 
